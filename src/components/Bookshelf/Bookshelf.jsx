@@ -43,13 +43,13 @@ const Bookshelf = () => {
             value={formData.author}
             onChange={handleInputChange}
           />
-          <button type="submit">Submit your book</button>
+          <button type="submit">Add Book</button>
         </form>
       </div>
       <div className="bookCardsDiv">
         <ul>
           {books.map((book, index) => (
-            <li key={index}>
+            <li key={index} className="bookCard">
               <h4>{book.title}</h4>
               <p>by {book.author}</p>
             </li>
